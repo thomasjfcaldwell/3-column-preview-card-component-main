@@ -1,0 +1,136 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 15px;
+}
+
+.container {
+	width: auto;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	max-width: 680px;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+#content-one {
+	background-color: hsl(31, 77%, 52%);
+	border-radius: 0.4em 0 0 0.4em;
+	transition: background-color 1s;
+}
+
+#content-two {
+	background-color: hsl(184, 100%, 22%);
+}
+#content-three {
+	background-color: hsl(179, 100%, 13%);
+	border-radius: 0 0.4em 0.4em 0;
+}
+
+.content {
+	padding: 2em;
+	width: 33%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content-image {
+	width: 35%;
+}
+
+.heading {
+	font-family: 'Big Shoulders Display', cursive;
+	text-transform: uppercase;
+	font-weight: 400;
+	margin: 0.6em 0;
+	font-size: 2.5rem;
+	color: white;
+}
+
+.sub-heading {
+	color: hsla(0, 0%, 100%, 0.75);
+	margin-bottom: 70px;
+	font-size: 0.78em;
+	line-height: 1.5;
+}
+
+button {
+	width: 60%;
+	padding: 1em 0;
+	border: none;
+	font-size: 0.7em;
+	border-radius: 20px;
+	border: 2px solid white;
+	letter-spacing: 1px;
+}
+
+#content-one button {
+	color: hsl(31, 77%, 52%);
+}
+#content-one button:active {
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid white;
+	color: white;
+}
+
+#content-two button {
+	color: hsl(184, 100%, 22%);
+}
+
+#content-two button:active {
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid white;
+	color: white;
+}
+
+#content-three button {
+	color: hsl(179, 100%, 13%);
+}
+#content-three button:active {
+	background-color: transparent;
+	cursor: pointer;
+	border: 2px solid white;
+	color: white;
+}
+
+@media (max-width: 425px) {
+	.container {
+		height: auto;
+		margin: 1em 0;
+	}
+	.wrapper {
+		flex-direction: column;
+	}
+	.content {
+		width: 70%;
+		margin: 0 auto;
+	}
+	#content-one {
+		border-radius: 0.4em 0.4em 0 0;
+	}
+	#content-three {
+		border-radius: 0 0 0.4em 0.4em;
+	}
+	.content-image {
+		width: 20%;
+	}
+	.sub-heading {
+		width: 100%;
+		margin-bottom: 3em;
+		font-size: 0.9rem;
+	}
+	button {
+		padding: 0.8em 0.5em;
+		font-size: 0.7rem;
+		width: 55%;
+	}
+}
