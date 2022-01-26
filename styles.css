@@ -15,8 +15,8 @@
 
 .wrapper {
 	display: flex;
-	justify-content: center;
-	max-width: 680px;
+	max-width: 800px;
+	min-height: 400px;
 	font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -35,8 +35,7 @@
 }
 
 .content {
-	padding: 2em;
-	width: 33%;
+	padding: 2.2em;
 	display: flex;
 	flex-direction: column;
 }
@@ -48,54 +47,56 @@
 .heading {
 	font-family: 'Big Shoulders Display', cursive;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 700;
 	margin: 0.6em 0;
-	font-size: 2.5rem;
+	font-size: 2.7rem;
 	color: white;
 }
 
 .sub-heading {
 	color: hsla(0, 0%, 100%, 0.75);
 	margin-bottom: 70px;
-	font-size: 0.78em;
-	line-height: 1.5;
+	font-size: 1em;
+	line-height: 1.7;
 }
 
-button {
+a {
 	width: 60%;
-	padding: 1em 0;
 	border: none;
-	font-size: 0.7em;
-	border-radius: 20px;
+	padding: 0.7rem 0;
+	font-size: 1em;
+	border-radius: 40px;
 	border: 2px solid white;
-	letter-spacing: 1px;
+	background-color: azure;
+	text-align: center;
+	text-decoration: none;
 }
 
-#content-one button {
+#content-one a {
 	color: hsl(31, 77%, 52%);
 }
-#content-one button:active {
+#content-one a:active {
 	background-color: transparent;
 	cursor: pointer;
 	border: 2px solid white;
 	color: white;
 }
 
-#content-two button {
+#content-two a {
 	color: hsl(184, 100%, 22%);
 }
 
-#content-two button:active {
+#content-two a:active {
 	background-color: transparent;
 	cursor: pointer;
 	border: 2px solid white;
 	color: white;
 }
 
-#content-three button {
+#content-three a {
 	color: hsl(179, 100%, 13%);
 }
-#content-three button:active {
+#content-three a:active {
 	background-color: transparent;
 	cursor: pointer;
 	border: 2px solid white;
@@ -109,9 +110,10 @@ button {
 	}
 	.wrapper {
 		flex-direction: column;
+		max-width: 320px;
 	}
 	.content {
-		width: 70%;
+		width: auto;
 		margin: 0 auto;
 	}
 	#content-one {
@@ -121,16 +123,15 @@ button {
 		border-radius: 0 0 0.4em 0.4em;
 	}
 	.content-image {
-		width: 20%;
+		width: 23%;
 	}
 	.sub-heading {
-		width: 100%;
+		width: auto;
 		margin-bottom: 3em;
-		font-size: 0.9rem;
+		font-size: 1em;
 	}
-	button {
+	a {
 		padding: 0.8em 0.5em;
-		font-size: 0.7rem;
-		width: 55%;
+		font-size: 1rem;
 	}
 }
